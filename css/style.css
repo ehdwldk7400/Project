@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+body{
+    
+    background: #cccccc;
+}
+/* .container{} */
+/* .headerIn{
+    position: relative;
+    width: 1600px;
+    height: 836px;
+    margin: 0 auto;   
+} */
+div.container{
+    position: absolute;
+    width: 1600px;
+    height: auto;
+    /* padding-top : calc(836 / 1000 * 100 ); */
+    position: relative;
+    margin: 0 auto;
+    /* background: url("../images/main_visual.jpg") center center no-repeat ; */
+    overflow: hidden;
+}
+img#mainimg{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width:1600px){
+    div.container{
+        width: 100%;
+        height: auto;
+    }
+    div.mainmenu{
+        width: 95%;
+    }
+    div.mainlogo{
+        margin: 0 auto;
+    }
+}
+div.Usermenu{
+    position: absolute;
+    right: 20px;
+    top: 0;
+    height: auto;
+}
+div.Usermenu ul{
+    display: flex; padding: 10px 0; 
+    width: auto; height: auto;}
+div.Usermenu li{
+     height: auto;
+     border-right: 1px solid #fff;
+   
+}
+div.Usermenu li a{
+    display: block;
+    align-items: center;
+    font-size: 12px;
+    text-align: center;
+    padding: 0 10px;
+    color: #fff;
+
+}
+div.Usermenu li:last-child{
+    border-right: none;
+}
+div.Usermenu li:last-child>a{
+    color: yellow;
+}
+.mainmenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 40px;
+    left: 32px;
+    /* margin: 0 auto; */
+    width: 1540px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.6);
+}
+div.logo{
+    width: 200px;
+    height: 70px;
+}
+div.logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+div.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+/* div.menu{   } */
+div.menu ul{
+    width: 600px;
+    display: flex;
+}
+div.menu li{
+    width: 120px;
+    height: auto;
+}
+div.menu li a{ color:  #fff; font-size: 16px; font-weight: 700; opacity: 0.8; width: 100%; height: 100%; display: block; text-align: center;}
+div.menu li a:hover{ color: yellow; transition: all 0.5s;}
+div.sns{margin-right: 12px;}
+div.mainlogo{
+    position: fixed;
+    top: 50%;
+    margin-top: 100px;
+    left: 50%;
+    transform: translate(-50%, -250%);
+}
+
+/* .submenu{
+    position: relative;
+    position: absolute;
+    bottom: 0px;
+    left: 32px;
+} */
+ul.opne{
+
+    left: 32px;
+    width: 1544px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    /* background: #000; */
+    /* transition: all 0.5s; */
+}
+ul.opne li:nth-child(1){
+    background: #7b70ac;
+
+}
+ul.opne li:nth-child(2){
+    background: #ba70a5;
+}
+ul.opne li:nth-child(3){
+    background: #c19596 ;
+}
+ul.opne li:nth-child(4){
+    background: #c2b497;
+}
+.submenu li{
+    position: relative;
+    top: 756px;
+    left: 32px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 386px;
+    height: 80px;
+    text-align: center;
+}
+.submenu li h2{ color: #fff; font-size: 18px;}
+.submenu li p{color: #fff; font-size: 12px;}
+
+ul.listUl{
+    position: absolute;
+    /* bottom: -280px; */
+    display: flex;
+    /* position: relative; */
+    /* left: 32px; */
+    height: 280px;
+}
+
+
+li.list{
+    position: relative;
+    left: 32px;
+    /* bottom: 500px; */
+    top: 756px;
+    /* 보이기 556 */
+    transition: all 0.5s;
+    width: 386px;
+    height:280px;
+    bottom: 0px;
+
+}
+li.list .txt1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+}
+li.list .txt2{
+    color: yellow;
+    font-size: 12px;
+    line-height: 23px;
+}
+li.list .txt3{
+    font-size: 10px;
+    line-height: 20px;
+}
+li.list a{
+    margin-top: 30px;
+    display: block;
+    width: 51px;
+    height: 51px;
+    text-indent: -99999px;
+    background: url(../images/main_tab_btn_view.png);
+}
+li.list a:hover{
+    background-position: 0 -51px;
+}
+ul.listUl li:nth-child(1){
+    background: rgba(123, 112, 172, 0.8);
+}
+ul.listUl li:nth-child(2){
+    background: rgba(186, 112, 165, 0.8);
+}
+ul.listUl li:nth-child(3){
+    background: rgba(193, 149, 150, 0.8);
+}
+ul.listUl li:nth-child(4){
+    background: rgba(194, 180, 151, 0.8);
+}
